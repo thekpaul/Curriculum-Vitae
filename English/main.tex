@@ -4,10 +4,8 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[sfdefault]{noto}
 \usepackage[T1]{fontenc}
-\usepackage{tikz,pgf,fontawesome,float,multicol}
+\usepackage{tikz,pgf,fontawesome,float}
 \setlength{\parindent}{0pt}
-\setlength{\columnsep}{.15in}
-\setlength{\columnseprule}{.5pt}
 
 \begin{document}
 \thispagestyle{empty}
@@ -22,16 +20,10 @@ Computer Engineer and Software Developer \newline % One-Liner Description
 \vspace{10pt} \\
 \hline
 \end{tabular}
-\vspace{-10pt}
-\begin{multicols*}{3}
-Sample Text One
+\begin{center}
+\begin{tabular}{p{.3\textwidth}|p{.6\textwidth}}
 
-\columnbreak
-
-Sample Text Two
-
-\columnbreak
-
-Sample Text Three
-\end{multicols*}
+&
+\end{tabular}
+\end{center}
 \end{document}
