@@ -2,6 +2,8 @@
 \usepackage[margin=0.75in]{geometry}
 \usepackage[doublespacing]{setspace}
 \usepackage[hidelinks]{hyperref}
+\usepackage[sfdefault]{noto}
+\usepackage[T1]{fontenc}
 \usepackage{tikz,pgf,fontawesome,float,multicol}
 \setlength{\parindent}{0pt}
 \setlength{\columnsep}{.15in}
@@ -9,14 +11,15 @@
 
 \begin{document}
 \thispagestyle{empty}
-\begin{tabular}{p{.7\textwidth} r} % 0.8in width pic
+\begin{tabular}{p{.7\textwidth} p{.3\textwidth}} % 0.8in width pic
 Paul Kim \newline % Name
 Computer Engineer and Software Developer \newline % One-Liner Description
 \faLinkedin\enspace @thekpaul \faHome\enspace \url{https://thekpaul.github.io}
 \faFlag\enspace Korea, Republic of \newline % Social and Background
 \faBook\enspace Dept. of Electrical and Computer Engineering @ Seoul Nat'l Univ.
 % Educational Background
-& \raisebox{-\height}{\includegraphics{../refs/profile.png}} \vspace{10pt} \\
+& \multicolumn{1}{r}{\raisebox{-\height}{\includegraphics{../refs/profile.png}}}
+\vspace{10pt} \\
 \hline
 \end{tabular}
 \vspace{-10pt}
