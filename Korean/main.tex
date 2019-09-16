@@ -1,9 +1,30 @@
 \documentclass[10pt]{article}
 \usepackage[margin=0.75in]{geometry}
 \usepackage[doublespacing]{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage[sfdefault]{noto}
+\usepackage[T1]{fontenc}
 \usepackage[hangul]{kotex} % Korean Version
-\usepackage{tikz,pgf}
+\usepackage{tikz,pgf,fontawesome,float}
+\setlength{\parindent}{0pt}
 
 \begin{document}
+\thispagestyle{empty}
+\begin{tabular}{p{.7\textwidth} p{.3\textwidth}} % 0.8in width pic
+김형준 \newline % Name
+컴퓨터 및 소프트웨어 개발자 \newline % One-Liner Description
+\faLinkedin\enspace @thekpaul \faHome\enspace \url{https://thekpaul.github.io}
+\faFlag\enspace 대한민국 \newline % Social and Background
+\faBook\enspace 서울대학교 전기정보공학부 학사과정 재학 중
+% Educational Background
+& \multicolumn{1}{r}{\raisebox{-\height}{\includegraphics{../refs/profile.png}}}
+\vspace{10pt} \\
+\hline
+\end{tabular}
+\begin{center}
+\begin{tabular}{p{.3\textwidth}|p{.6\textwidth}}
 
+&
+\end{tabular}
+\end{center}
 \end{document}
