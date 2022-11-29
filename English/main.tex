@@ -10,6 +10,7 @@
 \setlength{\tabcolsep}{0pt}
 \setlist[itemize, 1]{leftmargin = 0.1in}
 \NewDocumentCommand \TIME { m o } {#1\IfValueTF{#2}{ to #2}{}}
+\NewDocumentCommand \HEAD { m } {\raggedleft \textbf{#1} \qquad}
 
 \begin{document}
   \pagestyle{empty}
@@ -18,7 +19,9 @@
     % Name
     {\Large Paul Kim} \newline
     % One-Liner Description
-    Computer Engineer and Software Developer \newline
+    % Computer Engineer and Software Developer
+    Undergraduate at Electrical \& Computer Engineering,
+    Seoul National University \newline
     % Social and Background
     \faLinkedin{} \href{https://www.linkedin.com/in/thekpaul}{@thekpaul} \quad
     \faHome{} \url{https://thekpaul.dev} \quad
@@ -54,9 +57,23 @@
             (Korean Augmentation To the United States Army) Agent
         \end{itemize}
       \\[20pt]
+    % {\Large Publications} & \\[10pt]
+    % \TIME{<++>} &
+    %   <++>
+    % \\[20pt]
       {\Large Skills} & \\[10pt]
-      \TIME{<++>} &
-        <++>
+      \HEAD{Programming} & \vspace{-\baselineskip}
+        \begin{itemize}
+          \item Limited experience with basics in C, C++, Python and Verilog
+          \item Limited experience with HTML/CSS front-end development
+          \item Proficient in typesetting with \LaTeX{}
+        \end{itemize}
+        \\[5pt]
+      \HEAD{Langauges} & \vspace{-\baselineskip}
+        \begin{itemize}
+          \item Korean: Native proficiency
+          \item English: Fluent, professional working proficiency
+        \end{itemize}
       \\
     \end{tabular}
   \end{center}
