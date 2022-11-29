@@ -1,30 +1,64 @@
 \documentclass[10pt]{article}
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin = 0.75in]{geometry}
 \usepackage[doublespacing]{setspace}
 \usepackage[hidelinks]{hyperref}
 \usepackage[sfdefault]{noto}
 \usepackage[T1]{fontenc}
 \usepackage[hangul]{kotex} % Korean Version
-\usepackage{tikz,pgf,fontawesome,float}
+\usepackage{graphicx, fontawesome, calc, enumitem}
 \setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlist[itemize, 1]{leftmargin = 0.1in}
+\NewDocumentCommand \TIME { m o } {#1\IfValueTF{#2}{ to #2}{}}
 
 \begin{document}
-\thispagestyle{empty}
-\begin{tabular}{p{.7\textwidth} p{.3\textwidth}} % 0.8in width pic
-Paul Kim \newline % Name
-Computer Engineer and Software Developer \newline % One-Liner Description
-\faLinkedin\enspace @thekpaul \faHome\enspace \url{https://thekpaul.github.io}
-\faFlag\enspace Korea, Republic of \newline % Social and Background
-\faBook\enspace Dept. of Electrical and Computer Engineering @ Seoul Nat'l Univ.
-% Educational Background
-& \multicolumn{1}{r}{\raisebox{-\height}{\includegraphics{../refs/profile.png}}}
-\vspace{10pt} \\
-\hline
-\end{tabular}
-\begin{center}
-\begin{tabular}{p{.3\textwidth}|p{.6\textwidth}}
+  \pagestyle{empty}
 
-&
-\end{tabular}
-\end{center}
+  \begin{tabular}{ p{.75\linewidth} p{.25\linewidth} }
+    % Name
+    {\Large Paul Kim} \newline
+    % One-Liner Description
+    Computer Engineer and Software Developer \newline
+    % Social and Background
+    \faLinkedin{} \href{https://www.linkedin.com/in/thekpaul}{@thekpaul} \quad
+    \faHome{} \url{https://thekpaul.dev} \quad
+    \faFlag{} Republic of Korea \newline
+    \faInstitution{} \href{mailto:jsvn7777@snu.ac.kr}{jsvn7777@snu.ac.kr} \quad
+    \faEnvelopeO{} \href{mailto:thekpaul000@gmail.com}{thekpaul000@gmail.com}
+    &
+    % Profile Picture
+    \multicolumn{1}{r}{\raisebox{-\height+11pt}{%
+      \includegraphics[width = .25\linewidth]{../refs/mugshot.png}}}
+  % \vspace{10pt}
+    \\ \hline
+  \end{tabular}
+
+  \begin{center}
+    \begin{tabular}{ p{.25\linewidth}  p{.75\linewidth}}
+      {\Large Education} & \\[10pt]
+      \TIME{Mar. 2018} &
+        {\large BA in Electrical \& Computer Engineering,
+        Seoul National University} \newline
+        Expected to graduate in 2024
+      % \\[5pt]
+    % \TIME{Mar. 2015}[Feb. 2018] &
+    %   {\large Sangmoon High School}
+      \\[20pt]
+      {\Large Experience} & \\[10pt]
+      \TIME{Dec. 2019}[Jul. 2021] &
+        {\large KATUSA, Human Resources Specialist (42A)} \newline
+        \textbf{94\textsuperscript{th} Military Police Battalion},
+        Pyeongtaek, Republic of Korea
+        \begin{itemize}
+          \item Mandatory military service as a KATUSA \newline
+            (Korean Augmentation To the United States Army) Agent
+        \end{itemize}
+      \\[20pt]
+      {\Large Skills} & \\[10pt]
+      \TIME{<++>} &
+        <++>
+      \\
+    \end{tabular}
+  \end{center}
+
 \end{document}
