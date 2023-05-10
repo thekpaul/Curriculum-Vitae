@@ -10,7 +10,7 @@
 \setlength{\tabcolsep}{0pt}
 \setlist[itemize, 1]{leftmargin = 0.1in}
 \setlist[itemize, 2]{leftmargin = 0.3in}
-\NewDocumentCommand \TIME { m o } {#1\IfValueTF{#2}{ to #2}{}}
+\NewDocumentCommand \TIME { m o } {#1\IfValueTF{#2}{\newline \enspace to #2}{}}
 \NewDocumentCommand \HEAD { m } {\raggedleft \textbf{#1} \qquad}
 
 \begin{document}
@@ -39,43 +39,56 @@
   \end{tabular}
 
   \begin{center}
-    \begin{tabular}{ p{.25\linewidth}  p{.75\linewidth}}
+    \begin{tabular}{ p{.2\linewidth}  p{.8\linewidth}}
       {\Large Education} & \\[10pt]
       \TIME{Mar. 2018} &
         {\large BA in Electrical \& Computer Engineering,
         Seoul National University} \newline
         Expected to graduate in 2024 \newline
         \textbf{Areas of Interest}: Deep Learning, System Programming,
-        Digital Systems Design
+        Digital Systems Design \newline
+        \textbf{Graduation Project}: Optimising the CNN Architecture with
+        Hardware Design
       % \\[5pt]
     % \TIME{Mar. 2015}[Feb. 2018] &
     %   {\large Sangmoon High School}
-      \\[20pt]
+      \\[10pt]
       {\Large Experience} & \\[10pt]
       \TIME{Dec. 2019}[Jul. 2021] &
         {\large KATUSA, Human Resources Specialist (42A)} \newline
         \textbf{94\textsuperscript{th} Military Police Battalion},
         Pyeongtaek, Republic of Korea
         \begin{itemize}
-          \item Mandatory military service as a KATUSA \newline
-            (Korean Augmentation To the United States Army) Agent
+          \item Mandatory military service as a KATUSA Agent \newline
+            (Korean Augmentation To the United States Army)
         \end{itemize}
-      \\[20pt]
+      \\[-5pt]
+      \TIME{Jan. 2023} &
+        {\large Student Intern for System Semiconductor Engineering} \newline
+        \textbf{Seoul National University}, Seoul, Republic of Korea
+        \begin{itemize}
+          \item Worked on CNN Architecture and Hardware Design Optimisation
+        \end{itemize}
+      \\[-5pt]
+      \TIME{Mar. 2023} &
+        {\large FPGA Engineer Intern for \textbf{NeuroRealityVision}} \newline
+        Dongtan, Republic of Korea
+      \\[10pt]
     % {\Large Publications} & \\[10pt]
     % \TIME{<++>} &
     %   <++>
     % \\[20pt]
       {\Large Skills} & \\[10pt]
-      \HEAD{Programming} & \vspace{-\baselineskip}
+      \HEAD{Engineering} & \vspace{-\baselineskip}
         \begin{itemize}
           \item Basic experience in C, C++ and Python
-          \item Basic experience in Verilog through course projects such as a
-            5-stage pipelined CPU with RISC-V 32I support and Gshare branch
-            prediction
+          \item Basic experience in embedded systems design on multi-purpose
+            SoC FPGAs
+          \item Capable of hardware design (and Verilog)
           \item Capable of maintaining HTML/CSS front-end development projects
           \item Proficient in typesetting with \LaTeX{}
         \end{itemize}
-        \\[5pt]
+        \\[-5pt]
       \HEAD{Langauges} & \vspace{-\baselineskip}
         \begin{itemize}
           \item Korean: Native proficiency
