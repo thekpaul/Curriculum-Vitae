@@ -1,5 +1,5 @@
 \documentclass[10pt]{article}
-\usepackage[margin = 0.75in]{geometry}
+\usepackage[a4paper, margin = 0.75in]{geometry}
 \usepackage[onehalfspacing]{setspace}
 \usepackage[hidelinks]{hyperref}
 \usepackage[sfdefault]{noto}
@@ -16,7 +16,7 @@
 \begin{document}
   \pagestyle{empty}
 
-  \begin{tabular}{ p{.75\linewidth} p{.25\linewidth} }
+  \begin{tabular}{ p{.8\linewidth} p{.2\linewidth} }
     % Name
     {\Large Paul Kim} \newline
     % One-Liner Description
@@ -33,7 +33,7 @@
     &
     % Profile Picture
     \multicolumn{1}{r}{\raisebox{-\height+11pt}{%
-      \includegraphics[width = .25\linewidth]{../refs/mugshot.png}}}
+      \includegraphics[width = .2\linewidth]{../refs/mugshot.png}}}
   % \vspace{10pt}
     \\ \hline
   \end{tabular}
@@ -58,9 +58,10 @@
         {\large FPGA Engineer Intern for \textbf{NeuroRealityVision}} \newline
         Dongtan, Republic of Korea
         \begin{itemize}
-          \item Firmware-based development for MIPI and Ethernet Integration
+          \item Firmware, software development for MIPI-to-Ethernet integration
           \item Bare-metal, standalone FPGA application with interrupt-based
             workflow
+          \item Custom IP development with Verilog-based RTL on Vivado
         \end{itemize}
       \\[-5pt]
       \TIME{Jan. 2023}[Jun. 2023] &
@@ -89,8 +90,8 @@
         \begin{itemize}
           \item Experienced in embedded systems design on multi-purpose
             SoC FPGAs
-          \item Capable of versatile development with C, C++ and Python
           \item Capable of basic RTL hardware design using Verilog
+          \item Capable of versatile development with C, C++ and Python
           \item Capable of maintaining HTML/CSS front-end projects
           \item Proficient in typesetting with \LaTeX{}
         \end{itemize}
@@ -103,5 +104,7 @@
       \\
     \end{tabular}
   \end{center}
+
+\newpage
 
 \end{document}
