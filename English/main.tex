@@ -1,17 +1,28 @@
 \documentclass[10pt]{article}
-\usepackage[a4paper, margin = 0.75in]{geometry}
+\usepackage[a4paper, margin = 0.75in, top = 1in]{geometry}
 \usepackage[onehalfspacing]{setspace}
 \usepackage[hidelinks]{hyperref}
 \usepackage[sfdefault]{noto}
 \usepackage[T1]{fontenc}
 % \usepackage[hangul]{kotex} % Korean Version
-\usepackage{graphicx, fontawesome, calc, enumitem}
+\usepackage{graphicx, fontawesome, calc, enumitem, fancyhdr}
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0pt}
 \setlist[itemize, 1]{leftmargin = 0.1in}
 \setlist[itemize, 2]{leftmargin = 0.3in}
 \NewDocumentCommand \TIME { m o } {#1\IfValueTF{#2}{\newline \enspace to #2}{}}
 \NewDocumentCommand \HEAD { m } {\raggedleft \textbf{#1} \qquad}
+\AtBeginDocument{%
+  \pagestyle{fancy}
+  \fancypagestyle{stylemain} {%
+    \fancyhf{}
+    \fancyhead[L]{\textsc{Paul Kim}}
+  % \fancyhead[R]{\thepage}
+    \fancyfoot[C]{\textsc{curriculum vitae}}
+    \renewcommand{\headrulewidth}{0.5pt}
+    \renewcommand{\footrulewidth}{0.5pt}
+  }
+}
 
 \begin{document}
   \pagestyle{empty}
@@ -106,5 +117,53 @@
   \end{center}
 
 \newpage
+\pagestyle{stylemain}
+
+\section*{Education}
+
+\subsection*{Bachelor's Degree: ECE, SNU}
+\begin{itemize}
+  \item Expected to graduate in Summer 2024
+  \item \textbf{Areas of Interest}: System Programming, Digital Systems Design,
+    Deep Learning
+  \item \textbf{Graduation Project}: Optimising the CNN Architecture with
+    Hardware Design
+\end{itemize}
+
+\section*{Experience}
+
+\subsection*{FPGA Engineer Intern: NeuroRealityVision}
+\begin{itemize}
+  \item Firmware, software development for MIPI-to-Ethernet integration
+  \item Bare-metal, standalone FPGA application with interrupt-based workflow
+  \item Custom IP development with Verilog-based RTL on Vivado
+\end{itemize}
+
+\subsection*{Student Intern: SSAI, SNU}
+\begin{itemize}
+  \item Worked on CNN Architecture and Hardware Design Optimisation
+\end{itemize}
+
+\subsection*{KATUSA Human Resources Specialist}
+\begin{itemize}
+  \item Mandatory military service as a KATUSA Agent
+    (Korean Augmentation To the United States Army)
+\end{itemize}
+
+% \section*{Skills}
+
+% \subsection*{<++>}
+
+% \subsection*{<++>}
+
+% \subsection*{<++>}
+
+% \subsection*{<++>}
+
+% \subsection*{<++>}
+
+% \subsection*{<++>}
+
+% \subsection*{<++>}
 
 \end{document}
