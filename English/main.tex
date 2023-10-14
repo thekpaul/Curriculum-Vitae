@@ -10,7 +10,9 @@
 \setlength{\tabcolsep}{0pt}
 \setlist[itemize, 1]{leftmargin = 0.1in}
 \setlist[itemize, 2]{leftmargin = 0.3in}
-\NewDocumentCommand \TIME { m o } {#1\IfValueTF{#2}{\newline \enspace to #2}{}}
+\NewDocumentCommand \TIME { m o } {%
+  \IfValueTF{#2}{#1\newline \enspace to #2}{From #1}%
+}
 \NewDocumentCommand \HEAD { m } {\raggedleft \textbf{#1} \qquad}
 \AtBeginDocument{%
   \pagestyle{fancy}
