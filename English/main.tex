@@ -124,10 +124,28 @@
 \subsection*{Bachelor's Degree: ECE, SNU}
 \begin{itemize}
   \item Expected to graduate in Summer 2024
+  \item \textbf{Graduation Project}: Optimising the CNN Architecture with
+    Hardware Design \label{edu:gradproj}
+    \begin{itemize}
+      \item RTL development with Verilog
+      \item Pipelined, streaming CNN architecture concurrently running multiple
+        convolution layers
+      \item Improved performance in faster speed and less memory usage without
+        affecting end results
+    % \item Use of AXI4 protocol and tools such as the AMD-Xilinx MIG
+    %   (Memory Interface Generator)
+    \end{itemize}
   \item \textbf{Areas of Interest}: System Programming, Digital Systems Design,
     Deep Learning
-  \item \textbf{Graduation Project}: Optimising the CNN Architecture with
-    Hardware Design
+  \item[ ] Key Courses Taken:
+    \begin{itemize}
+      \item Computer Organisation, Digital Systems Design: Basic RTL simulation
+        and synthesis on FPGAs
+      \item Operating Systems: System calls, tasks, multithreading and
+        scheduling on the Linux kernel
+      \item Other Computer-related Courses: Introduction to Data Structures,
+        Introduction to Algorithms
+    \end{itemize}
 \end{itemize}
 
 \section*{Experience}
@@ -135,19 +153,43 @@
 \subsection*{FPGA Engineer Intern: NeuroRealityVision}
 \begin{itemize}
   \item Firmware, software development for MIPI-to-Ethernet integration
-  \item Bare-metal, standalone FPGA application with interrupt-based workflow
+    \begin{itemize}
+      \item Extract MIPI data from normal camera (CIS) and
+        \textbf{event camera} (DVS) sensors to FPGA main memory
+      \item \textbf{PS} (Processing System): Xilinx Gigabit Ethernet Controller
+        (GEM) via embedded ARM Cortex A53 CPU
+      \item \textbf{PL} (Programmable Logic): Xilinx AXI 1G Ethernet Subsystem
+        with multiple AXI DMA blocks
+      \item Experienced in hardware-firmware communication and interrupt
+        handling mechanisms
+      \item Experienced in server-side software development for communication
+        with attached FPGA boards \\
+        \textit{ex}. Ethernet packet parsing software to receive MIPI data and
+          reconstruct image stream
+    \end{itemize}
   \item Custom IP development with Verilog-based RTL on Vivado
+    \begin{itemize}
+      \item Receive parallel data from attached event camera (DVS) sensor and
+        reorganise for AXI4-Stream
+      \item Created block designs including RTL blocks to generate IP
+      \item Basic experience with generating functioning IPs based on block
+        designs in Vivado
+    \end{itemize}
 \end{itemize}
 
 \subsection*{Student Intern: SSAI, SNU}
 \begin{itemize}
-  \item Worked on CNN Architecture and Hardware Design Optimisation
+  \item Research Interest: CNN Architecture and Hardware Design Optimisation
+  \item In tandem with \textbf{\hyperref[edu:gradproj]{graduation project}} for
+    bachelor's degree from ECE, SNU
 \end{itemize}
 
 \subsection*{KATUSA Human Resources Specialist}
 \begin{itemize}
   \item Mandatory military service as a KATUSA Agent
     (Korean Augmentation To the United States Army)
+  \item Human Resources Specialist (42A) for RSO HHD,
+    94th Military Police Battalion at Camp Humphreys
 \end{itemize}
 
 % \section*{Skills}
