@@ -27,6 +27,7 @@
 
 \begin{document}
 \pagestyle{empty}
+\newgeometry{a4paper, margin = 0.5in}
 
 \begin{tabular}{ p{.8\linewidth} p{.2\linewidth} }
   % Name
@@ -77,6 +78,11 @@
           workflow
         \item Real-time Ethernet packet capture and image rendering
           software development
+          \begin{itemize}
+            \item Kernel-level optimisations in threading and system calls for
+              faster processing speed
+            \item Direct modifications to system and network settings
+          \end{itemize}
         \item Custom IP development with Verilog-based RTL on Vivado
       \end{itemize}
     \\[-5pt]
@@ -104,11 +110,11 @@
     {\Large Skills} & \\[10pt]
     \HEAD{Engineering} & \vspace{-\baselineskip}
       \begin{itemize}
-        \item Experienced in embedded systems design on multi-purpose
-          SoC FPGAs
+        \item Experienced in system software engineering for Windows and Linux
+        \item Experienced in embedded systems design on multi-purpose SoC FPGAs
         \item Capable of basic RTL hardware design using Verilog
         \item Capable of versatile development with C, C++ and Python
-        \item Capable of maintaining HTML/CSS front-end projects
+      % \item Capable of maintaining HTML/CSS front-end projects
         \item Proficient in typesetting with \LaTeX{}
       \end{itemize}
       \\[-5pt]
@@ -122,6 +128,7 @@
 \end{center}
 
 \newpage
+\restoregeometry
 \pagestyle{stylemain}
 
 \section*{Education}
@@ -137,8 +144,6 @@
         convolution layers
       \item Improved performance in faster speed and less memory usage without
         affecting end results
-    % \item Use of AXI4 protocol and tools such as the AMD-Xilinx MIG
-    %   (Memory Interface Generator)
     \end{itemize}
   \item \textbf{Areas of Interest}: System Programming, Digital Systems Design,
     Deep Learning
@@ -161,16 +166,26 @@
     \begin{itemize}
       \item Extract MIPI data from normal camera (CIS) and
         \textbf{event camera} (DVS) sensors to FPGA main memory
-      \item \textbf{PS} (Processing System): Xilinx Gigabit Ethernet Controller
-        (GEM) via embedded ARM Cortex A53 CPU
-      \item \textbf{PL} (Programmable Logic): Xilinx AXI 1G Ethernet Subsystem
-        with multiple AXI DMA blocks
       \item Experienced in hardware-firmware communication and interrupt
         handling mechanisms
+        \begin{itemize}
+          \item \textbf{PS} (Processing System): Xilinx Gigabit Ethernet
+            Controller (GEM) and ARM Cortex-A53 Processor
+          \item \textbf{PL} (Programmable Logic): Xilinx AXI 1G Ethernet
+            Subsystem with multiple AXI DMA blocks
+        \end{itemize}
       \item Experienced in server-side software development for communication
         with attached FPGA boards \\
         \textit{ex}. Ethernet packet parsing software to receive MIPI data and
           reconstruct image stream
+      \item Experienced in system software engineering in multi-threaded
+        applications optimised for speed
+        \begin{itemize}
+          \item Direct interactions with various kernel and OS-specific ABI
+            for streamlined performance
+          \item Direct modifications to server system to enhance single-core
+            and network performance
+        \end{itemize}
     \end{itemize}
   \item Custom IP development with Verilog-based RTL on Vivado
     \begin{itemize}
@@ -179,6 +194,13 @@
       \item Created block designs including RTL blocks to generate IP
       \item Basic experience with generating functioning IPs based on block
         designs in Vivado
+    \end{itemize}
+  \item Linux Server Management
+    \begin{itemize}
+      \item Experienced in protocols such as VNC, SSH and RDP for remote work
+        and automated services
+      \item System administration for wide range of hardware and software
+        development toolkits
     \end{itemize}
 \end{itemize}
 
