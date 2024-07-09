@@ -7,8 +7,8 @@
 \usepackage{graphicx, fontawesome, calc, enumitem, fancyhdr, kotex}
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0pt}
-\setlist[itemize, 1]{leftmargin = 0.1in}
-\setlist[itemize, 2]{leftmargin = 0.3in}
+\setlist[itemize, 1]{leftmargin = 0.1in, itemsep = 0pt, parsep = 1pt}
+\setlist[itemize, 2]{leftmargin = 0.3in, itemsep = 0pt, parsep = 1pt}
 \NewDocumentCommand \TIME { m o } {%
   \IfValueTF{#2}{#1\newline \enspace to #2}{From #1}%
 }
@@ -56,11 +56,16 @@
 \begin{center}
   \begin{tabular}{ p{.2\linewidth}  p{.8\linewidth}}
     \hyperref[edu]{\Large Education} & \\[10pt]
-    \TIME{Mar. 2018} &
+    \TIME{Sep. 2024} &
+      \hyperref[master]{\large MS \& Ph.D in Electrical \& Computer %
+        Engineering, Seoul National University} \newline
+    % 서울대학교 전기정보공학부 석박사 통합과정 이수 \newline
+      \textbf{Areas of Interest}: Digital Systems Design, Deep Learning
+    \\[5pt]
+    \TIME{Mar. 2018}[Aug. 2024] &
       \hyperref[bachelor]{\large BS in Electrical \& Computer Engineering, %
         Seoul National University} \newline
     % 서울대학교 전기정보공학부 학사 과정 이수 \newline
-      Expected to graduate in Summer 2024 \newline
       \textbf{Areas of Interest}: System Programming, Digital Systems Design,
         Deep Learning \newline
       \textbf{Graduation Project}: Optimising the CNN Architecture with
@@ -70,7 +75,7 @@
   %   {\large Sangmoon High School}
     \\[10pt]
     \hyperref[exp]{\Large Experience} & \\[10pt]
-    \TIME{Mar. 2023} &
+    \TIME{Mar. 2023}[Jun. 2024] &
       \hyperref[intern1]{\large FPGA Engineer Intern for %
         \textbf{NeuroRealityVision}} \newline
     % FPGA 연구원 인턴, (주) 뉴로리얼리티비전
@@ -89,7 +94,7 @@
           \end{itemize}
         \item Custom IP development with Verilog-based RTL on Vivado
       \end{itemize}
-    \\[-5pt]
+    \\[5pt]
     \TIME{Jan. 2023}[Jun. 2023] &
       \hyperref[intern2]{\large Student Intern for %
         Dept. of System Semiconductor Engineering} \newline
@@ -98,7 +103,7 @@
       \begin{itemize}
         \item Worked on CNN Architecture and Hardware Design Optimisation
       \end{itemize}
-    \\[-5pt]
+    \\[5pt]
     \TIME{Dec. 2019}[Jul. 2021] &
       \hyperref[military]{\large KATUSA, Human Resources Specialist (42A)} %
       \newline
@@ -109,7 +114,7 @@
         \item Mandatory military service as a KATUSA Agent \newline
           (Korean Augmentation To the United States Army)
       \end{itemize}
-    \\[5pt]
+    \\[10pt]
   % {\Large Publications} & \\[10pt]
   % \TIME{<++>} &
   %   <++>
@@ -123,7 +128,7 @@
         \item Capable of maintaining HTML/CSS front-end projects
         \item Proficient in typesetting with \LaTeX{}
       \end{itemize}
-      \\[-5pt]
+      \\
     \HEAD{Languages} & \vspace{-\baselineskip}
       \begin{itemize}
         \item Korean: Native proficiency
