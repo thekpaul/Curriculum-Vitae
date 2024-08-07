@@ -2,9 +2,28 @@
 \usepackage[a4paper, margin = 0.75in, top = 1in]{geometry}
 \usepackage[onehalfspacing]{setspace}
 \usepackage[hidelinks]{hyperref}
-\usepackage[sfdefault]{noto}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx, fontawesome, calc, enumitem, fancyhdr, kotex}
+
+\usepackage{fontspec}
+\setmainfont{KoPubWorld Dotum_Pro}[
+  Extension = .otf,
+  UprightFont = * Medium,
+  BoldFont = * Bold
+]
+% \setmainfont{NanumSquareRoundOTF}[
+%   Extension = .otf,
+%   UprightFont = *R,
+%   BoldFont = *B
+% ]
+\setmonofont{VictorMonoNerdFont}[
+  Extension = .ttf,
+  UprightFont = *-Regular, ItalicFont = *-Italic,
+  BoldFont = *-SemiBold, ItalicFont = *-SemiBoldItalic,
+  Contextuals = Alternate,
+  StylisticSet = {1, 2, 6, 7}
+]
+
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0pt}
 \setlist[itemize, 1]{leftmargin = 0.1in, itemsep = 0pt, parsep = 1pt}
